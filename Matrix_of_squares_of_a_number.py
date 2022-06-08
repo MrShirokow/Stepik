@@ -20,6 +20,4 @@ while dimension != 0:
     k_x, k_y = k_y, k_x                 # Меняем направление
 
 for j in range(n):
-    for i in range(n):
-        print(matrix[j][i], end=' ')
-    print()
+    print(*matrix[j])
