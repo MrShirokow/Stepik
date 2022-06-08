@@ -3,7 +3,7 @@ import math
 pi = 3.14
 
 
-def geron(x, y, z):
+def geron(x: int, y: int, z: int) -> float:
     p = (x + y + z) / 2
     return math.sqrt(p * (p - x) * (p - y) * (p - z))
 
