@@ -9,11 +9,11 @@ matrix[0][:] = [x + 1 for x in range(n)]    # заполнение первой 
 
 while dimension != 0:
     dimension -= 1
-    for step_y in range(dimension):     # по сути, можно этот и нижний цикл как отдельную функцию сделать
+    for _ in range(dimension):     # по сути, можно этот и нижний цикл как отдельную функцию сделать
         y += k_y
         matrix[y][x] = element
         element += 1
-    for step_x in range(dimension):
+    for _ in range(dimension):
         x += k_x
         matrix[y][x] = element
         element += 1
