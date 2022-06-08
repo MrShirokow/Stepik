@@ -8,6 +8,6 @@ for cl in class_info:
     classes[class_number][0] += height
     classes[class_number][1] += 1
 
-for key in classes:
-    result = '-' if classes[key][1] == 0 else classes[key][0] / classes[key][1]
-    print(f'{key} {result}')
+for key, heights in classes.items():
+    average_height = heights[0] / heights[1] if  heights[1] else '-'
+    print(f'{key} {average_height}')
